@@ -1,0 +1,2 @@
+class MapReader
+end
