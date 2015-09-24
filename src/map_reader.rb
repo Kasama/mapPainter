@@ -18,6 +18,10 @@ class MapReader
       hash[key] = Array.new
     end
 
+    # reads 'op' character in the first line
+    op = file.readline.to_s.match(/^\d+\s*(.)/).captures
+
+    # fill in the graph
     # for each file line
     file.each_line do |l|
       # ignore any lines with numbers in it or empty
@@ -34,8 +38,8 @@ class MapReader
       neighbors.each do |n| graph[node_sym].push n end
     end
 
-    # returns the graph
-    graph
+    # returns a hash containing the graph and operation
+    {graph: graph, operation: op}
 
   end
 end
