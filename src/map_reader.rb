@@ -29,13 +29,13 @@ class MapReader
       # set the node_name to what comes before the ':' and neighbors to what comes after it
       node_name, neighbors = l.to_s.match(/^(.+):(.*).$/i).captures
       # turn the string into a symbol without leading/following spaces
-      node_sym = node_name.strip.to_sym
+      node_sym = node_name.to_sym
       # touch the graph with the node name to create an array for it
       graph[node_sym]
       # split the neighbors
       neighbors = neighbors.split(', ')
       #add each neighbor to the array
-      neighbors.each do |n| graph[node_sym].push n end
+      neighbors.each do |n| graph[node_sym].push n.strip end
     end
 
     # returns a hash containing the graph and operation
