@@ -13,4 +13,22 @@ class Graph
     @nodes.each block
   end
 
+  def next(node)
+    i = @nodes.index node
+    i = i + 1
+
+	if i >= nodes.length
+	   	nil
+	else 
+		i
+	end
+  end
+
+  def last
+	nodes[-1]
+  end
+
+  def first
+	nodes[0]
+  end
 end
