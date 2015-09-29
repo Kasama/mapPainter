@@ -4,7 +4,7 @@ class AdjMatrix
     @matrix = Array.new n do |_|
       Array.new n, 0
     end
-    @nodes = Array.new n do |_|
+    @node_names = Array.new n do |_|
       Array.new n, Node.null
     end
   end
