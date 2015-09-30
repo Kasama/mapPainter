@@ -18,19 +18,6 @@ class Node
     neighbors.possible_colors block
   end
 
-  def has_next_color
-    # flag = !initial_color.present?
-    # Color.each do |c|
-    #   # pode dar segfault, fica de olho
-    #   flag = true if initial_color == c
-    #   if flag
-    #     @color = Color.new c
-    #     break if check_neighbors_colors
-    #   end
-    # end
-    # @color
-  end
-
   def to_s
     s = "#{@name}: {#{@color.to_s}| "
 
@@ -43,19 +30,27 @@ class Node
 
   def set_valid_color
     begin
-      @color.next_color
+      assign_next_color
     end until check_neighbors_colors
     @color
   end
 
+  def assign_next_color
+    @color.next_color
+  end
+
   def check_neighbors_colors
     valid = true
-    @neighbors.each do |n|
-      valid = valid && !(n.color.eql? @color)
+    neighbors.each do |n|
+      valid = valid && check_validity(n)
     end
     valid
   end
 
-  private :check_neighbors_colors
+  def check_validity(neighbor)
+    !(neighbor.color.eql? color)
+  end
+
+  private :check_neighbors_colors, :check_validity
 
 end

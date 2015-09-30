@@ -3,13 +3,17 @@ class Graph
   def initialize(adj_list)
     @nodes = Hash.new
     adj_list.each_key do |k|
-      @nodes[k] = Node.new k
+      @nodes[k] = create_node k
     end
     adj_list.each_key do |k|
       adj_list[k].each do |neighbor|
         @nodes[k].add_neighbor @nodes[neighbor.to_sym]
       end
     end
+  end
+
+  def create_node(name)
+    Node.new name
   end
 
   def each_node(&block)

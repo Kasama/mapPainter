@@ -1,6 +1,11 @@
 class Color
 
+  @@colors = [:blue, :yellow, :red, :green]
   attr_reader :color
+
+  def self.colors
+    @@colors
+  end
 
   def present?
     @color
