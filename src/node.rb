@@ -38,7 +38,7 @@ class Node
       s.concat "[#{n.name}:#{n.color}] "
     end
 
-    s.concat "}\n"
+    s.concat '}'
   end
 
   def set_valid_color
