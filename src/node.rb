@@ -4,14 +4,18 @@ class Node
   attr_reader :name
   attr_reader :neighbors
 
-  def initialize(name, neighbors)
+  def initialize(name)
     @name = name
-    @neighbors = neighbors
+    @neighbors = Array.new
     @color = Color.none
   end
 
+  def add_neighbor(neighbor)
+    @neighbors.push neighbor
+  end
+
   def each_neighbor(&block)
-    neighbors.each block
+    neighbors.possible_colors block
   end
 
   def has_next_color
@@ -27,11 +31,20 @@ class Node
     # @color
   end
 
-  def set_valid_color
-    @color.next_color
-    until check_neighbors_colors
-      @color.next_color
+  def to_s
+    s = "#{@name}: {#{@color.to_s}| "
+
+    @neighbors.each do |n|
+      s.concat "[#{n.name}:#{n.color}] "
     end
+
+    s.concat "}\n"
+  end
+
+  def set_valid_color
+    begin
+      @color.next_color
+    end until check_neighbors_colors
     @color
   end
 

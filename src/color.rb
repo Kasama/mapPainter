@@ -2,15 +2,16 @@ class Color
 
   attr_reader :color
 
-  @each = [:blue, :yellow, :red, :green, nil]
-  @counter = 0
+  def present?
+    @color
+  end
 
   def self.none
     Color.new nil
   end
 
   def self.each(&block)
-    @each.each block
+    @possible_colors.each block
   end
 
   def eql?(other)
@@ -23,17 +24,26 @@ class Color
   end
 
   def initialize(color)
-    if @each.include? color
+    @possible_colors = [:blue, :yellow, :red, :green, nil]
+    if @possible_colors.include? color
       @color = color
     else
       @color = nil
     end
   end
 
+  def to_s
+    a = @color || 'nil'
+    a.to_s
+  end
+
   def next_color
-    i = @each.index @color
+    i = @possible_colors.index @color
+    # puts "=====inside next color, color = #{@color.to_s} i = #{i.to_s}"
     i = i + 1
-    @each[i % @each.length]
+    @color = @possible_colors[i % @possible_colors.length]
+    # puts "=====color = #{@color.to_s}"
+    @color
   end
 
 end

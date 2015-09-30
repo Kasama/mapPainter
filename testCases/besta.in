@@ -1,0 +1,6 @@
+5 a
+A: B, C, E.
+B: A, C, D.
+C: A, B, D, E.
+D: B, C, E.
+E: A, C, D.

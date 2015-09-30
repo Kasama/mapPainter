@@ -1,12 +1,15 @@
 class Graph
 
   def initialize(adj_list)
-
-    @nodes = Array.new
+    @nodes = Hash.new
     adj_list.each_key do |k|
-      @nodes.push(Node.new k, adj_list[k])
+      @nodes[k] = Node.new k
     end
-
+    adj_list.each_key do |k|
+      adj_list[k].each do |neighbor|
+        @nodes[k].add_neighbor @nodes[neighbor.to_sym]
+      end
+    end
   end
 
   def each_node(&block)
@@ -14,21 +17,30 @@ class Graph
   end
 
   def next(node)
-    i = @nodes.index node
+    i = @nodes.values.index node
     i = i + 1
 
-	if i >= nodes.length
-	   	nil
-	else 
-		i
-	end
+    if i >= @nodes.length
+      nil
+    else
+      @nodes.values[i]
+    end
+  end
+
+  def to_s
+    s = ''
+    @nodes.values.each do |n|
+      s.concat n.to_s
+      s.concat "\n"
+    end
+    s
   end
 
   def last
-	nodes[-1]
+    @nodes.values.last
   end
 
   def first
-	nodes[0]
+    @nodes.values.first
   end
 end

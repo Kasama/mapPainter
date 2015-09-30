@@ -14,28 +14,38 @@
 
 class Backtracking
 
+	attr_reader :graph
+
   def initialize(graph)
     @graph = graph
   end
 
   def backtracking(node)
-		
-	  unless node 
+
+		puts "entered backtrack!\n node = '#{node.to_s}' class = '#{node.class}'"
+		puts "last color = #{@graph.last.color.to_s}"
+		if @graph.last.color.present?
+			puts 'finished successfully!'
+			return true
+		end
+
+	  unless node
+			puts 'node was null, returning'
 		  return false
-	  end
+		end
 
-	  if graph.last.color
-		return true
-	  end
+	  while node.set_valid_color.present?
+			puts "current color = #{node.color}"
+		  return true if backtracking(@graph.next node)
+			puts "came back from backtrack, node = #{node.to_s}"
+		end
 
-	  while node.set_valid_color
-		  backtracking(graph.next)
+		puts "voltando da recursão, nó atual #{node.to_s}"
 
-	  end
-
-	  unless graph.first.color
-		  false
-	  end
+	  # unless @graph.first.color
+			# puts 'failed to set colors, dats fucked up'
+			# false
+	  # end
 
   end
 end
