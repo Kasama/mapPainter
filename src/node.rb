@@ -19,19 +19,14 @@ class Node
   end
 
   def to_s
-    s = "#{@name}: {#{@color.to_s}| "
-
-    @neighbors.each do |n|
-      s.concat "[#{n.name}:#{n.color}] "
-    end
-
-    s.concat '}'
+    "#{@name}: #{@color.to_s}"
   end
 
   def set_valid_color
     begin
       assign_next_color
     end until check_neighbors_colors
+    GlobalCounter.increment if @color
     @color
   end
 

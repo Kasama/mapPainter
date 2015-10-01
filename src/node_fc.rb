@@ -15,9 +15,9 @@ class NodeFC < Node
     valid = super
     unless valid
       @consumed_from.each do |n|
-        puts "======restoring from '#{n.to_s}'"
+        # puts "======restoring from '#{n.to_s}'"
         n.forward_check_hash.restore_key
-        puts "====== n now has #{n.forward_check_hash.number_of_zeros}"
+        # puts "====== n now has #{n.forward_check_hash.number_of_zeros}"
       end
       @consumed_from = Array.new
     end
@@ -34,10 +34,10 @@ class NodeFC < Node
     return ret if ret.nil?
     neighbors.each do |n|
       if n.forward_check_hash.has color
-        puts "======consuming '#{ret}' from '#{n.to_s}' n = #{n.forward_check_hash.number_of_zeros}"
+        # puts "======consuming '#{ret}' from '#{n.to_s}' n = #{n.forward_check_hash.number_of_zeros}"
         @consumed_from.push n
         n.forward_check_hash.consume_key color
-        puts "====== n now has #{n.forward_check_hash.number_of_zeros}"
+        # puts "====== n now has #{n.forward_check_hash.number_of_zeros}"
       end
     end
     ret

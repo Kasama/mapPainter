@@ -19,7 +19,7 @@ class MapReader
     end
 
     # reads 'op' character in the first line
-    op = file.readline.to_s.match(/^\d+\s*(.)/).captures
+    op = file.readline.to_s.match(/^\d+\s*(.)/).captures.first
 
     # fill in the graph
     # for each file line

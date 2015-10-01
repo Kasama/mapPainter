@@ -24,15 +24,14 @@ class NewHash < Hash
 
   def consume_key(key)
     self[key.to_s.to_sym] = @next_index
-    puts "==========set #{key} to #{@next_index} new next_index++ #{self.to_s}"
+    # puts "==========set #{key} to #{@next_index} new next_index++ #{self.to_s}"
     @next_index = @next_index + 1
     @last_consumed = key.to_s.to_sym
   end
 
   def restore_key
-    # puts "==========using index #{@next_index} to find key"
     self[self.key self.values.max] = 0
-    puts "==========restore #{self.to_s}"
+    # puts "==========restore #{self.to_s}"
     @next_index = @next_index - 1
   end
 

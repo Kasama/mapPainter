@@ -7,7 +7,7 @@ class GraphGrau < GraphMVR
     nodes.values.each do |n|
       if !n.color.present? and (a = n.forward_check_hash.number_of_zeros) < min
         min = a
-        puts "+=+= found n as #{n} min is now #{min}"
+        # puts "+=+= found n as #{n} min is now #{min}"
       end
     end
 
@@ -20,7 +20,7 @@ class GraphGrau < GraphMVR
     end
 
     selected.each_index do |i|
-      puts "-=-= #{selected[i]}"
+      # puts "-=-= #{selected[i]}"
     end
 
     index = 0
@@ -33,7 +33,7 @@ class GraphGrau < GraphMVR
       end
     end
 
-    puts "*=*= #{selected[index]}"
+    # puts "*=*= #{selected[index]}"
     selected[index]
 
   end

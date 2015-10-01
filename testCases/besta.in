@@ -1,7 +1,0 @@
-6 a
-A: B, C, D, E, F.
-B: A, C, F.
-C: A, B, D, E, F.
-D: A, C, E, F.
-E: A, C, D, F.
-F: A, B, C, D, E.
