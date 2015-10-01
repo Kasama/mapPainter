@@ -1,6 +1,6 @@
 class Color
 
-  @@colors = [:blue, :yellow, :red, :green]
+  @@colors = [:Azul, :Amarelo, :Vermelho, :Verde]
   attr_reader :color
 
   def self.colors
@@ -29,7 +29,7 @@ class Color
   end
 
   def initialize(color)
-    @possible_colors = [:blue, :yellow, :red, :green, nil]
+    @possible_colors = [:Azul, :Amarelo, :Vermelho, :Verde, nil]
     if @possible_colors.include? color
       @color = color
     else

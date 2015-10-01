@@ -1,5 +1,5 @@
 class MapReader
-  def self.read_map(filename)
+  def self.read_map
 =begin
      all lines in the file follow /^.+:.*\.$/
      ^ = beginning of line
@@ -10,7 +10,7 @@ class MapReader
      $ = end of line
 =end
     # open file to read
-    file = open filename, 'r'
+    file = ARGF
 
     # initialize the graph
     graph = Hash.new do |hash, key|

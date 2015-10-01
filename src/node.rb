@@ -19,7 +19,7 @@ class Node
   end
 
   def to_s
-    "#{@name}: #{@color.to_s}"
+    "#{@name}: #{@color.to_s}."
   end
 
   def set_valid_color
