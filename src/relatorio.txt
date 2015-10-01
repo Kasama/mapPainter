@@ -1,0 +1,548 @@
+running for ../testCases/usa.in with 'Simple Backtrack'
+finished successfully!
+answer given by algorithm:
+AK: blue
+AL: blue
+AR: blue
+AZ: blue
+CA: yellow
+CO: yellow
+CT: blue
+DC: blue
+DE: blue
+FL: yellow
+GA: red
+HI: blue
+IA: blue
+ID: blue
+IL: yellow
+IN: blue
+KS: blue
+KY: red
+LA: red
+MA: yellow
+MD: yellow
+ME: blue
+MI: yellow
+MN: red
+MO: green
+MS: green
+MT: red
+NC: blue
+ND: blue
+NE: red
+NH: red
+NJ: yellow
+NM: green
+NV: green
+NY: green
+OH: green
+OK: red
+OR: red
+PA: red
+RI: red
+SC: yellow
+SD: yellow
+TN: yellow
+TX: yellow
+UT: red
+VA: green
+VT: blue
+WA: yellow
+WI: green
+WV: blue
+WY: green
+--------------------------
+total time: 86.989716855
+number of assignments 8177265
+running for ../testCases/EuropeFC.in with 'Forward Check'
+finished successfully!
+answer given by algorithm:
+Portugal: blue
+Spain: yellow
+Andorra: blue
+France: red
+Belgium: blue
+Germany: yellow
+Italy: blue
+Luxembourg: green
+Monaco: blue
+Switzerland: green
+Netherlands: red
+Austria: red
+Czech Republic: blue
+Denmark: blue
+Poland: red
+San Marino: yellow
+Slovenia: yellow
+Liechtenstein: blue
+Hungary: blue
+Slovakia: yellow
+Belarus: blue
+Lithuania: green
+Russia: yellow
+Ukraine: green
+Croatia: red
+Romania: yellow
+Serbia: green
+Latvia: red
+Estonia: blue
+Finland: blue
+Georgia: blue
+Norway: red
+Moldova: blue
+Bosnia: blue
+Montenegro: yellow
+Bulgaria: blue
+Macedonia: yellow
+Sweden: yellow
+Albania: blue
+Kosovo: red
+Greece: red
+--------------------------
+total time: 0.001957467
+number of assignments 8177308
+running for ../testCases/usaMVR.in with 'Forward Check + MVR'
+finished successfully!
+answer given by algorithm:
+AK: blue
+AL: yellow
+AR: yellow
+AZ: red
+CA: blue
+CO: blue
+CT: blue
+DC: red
+DE: red
+FL: red
+GA: blue
+HI: yellow
+IA: yellow
+ID: blue
+IL: red
+IN: blue
+KS: yellow
+KY: yellow
+LA: red
+MA: yellow
+MD: yellow
+ME: blue
+MI: yellow
+MN: red
+MO: blue
+MS: blue
+MT: red
+NC: yellow
+ND: yellow
+NE: red
+NH: red
+NJ: yellow
+NM: yellow
+NV: yellow
+NY: red
+OH: red
+OK: red
+OR: red
+PA: blue
+RI: red
+SC: red
+SD: blue
+TN: red
+TX: blue
+UT: green
+VA: blue
+VT: blue
+WA: yellow
+WI: blue
+WV: green
+WY: yellow
+--------------------------
+total time: 0.002832849
+number of assignments 8177359
+running for ../testCases/EuropeMVR.in with 'Forward Check + MVR'
+finished successfully!
+answer given by algorithm:
+Portugal: blue
+Spain: yellow
+Andorra: blue
+France: red
+Belgium: blue
+Germany: yellow
+Italy: yellow
+Luxembourg: green
+Monaco: blue
+Switzerland: blue
+Netherlands: red
+Austria: red
+Czech Republic: blue
+Denmark: blue
+Poland: red
+San Marino: blue
+Slovenia: blue
+Liechtenstein: yellow
+Hungary: yellow
+Slovakia: green
+Belarus: yellow
+Lithuania: blue
+Russia: green
+Ukraine: blue
+Croatia: red
+Romania: red
+Serbia: blue
+Latvia: red
+Estonia: blue
+Finland: blue
+Georgia: blue
+Norway: yellow
+Moldova: yellow
+Bosnia: yellow
+Montenegro: green
+Bulgaria: yellow
+Macedonia: red
+Sweden: red
+Albania: blue
+Kosovo: yellow
+Greece: green
+--------------------------
+total time: 0.002125561
+number of assignments 8177400
+running for ../testCases/Europe.in with 'Simple Backtrack'
+finished successfully!
+answer given by algorithm:
+Portugal: blue
+Spain: yellow
+Andorra: blue
+France: red
+Belgium: blue
+Germany: yellow
+Italy: blue
+Luxembourg: green
+Monaco: blue
+Switzerland: green
+Netherlands: red
+Austria: red
+Czech Republic: blue
+Denmark: blue
+Poland: red
+San Marino: yellow
+Slovenia: yellow
+Liechtenstein: blue
+Hungary: blue
+Slovakia: yellow
+Belarus: blue
+Lithuania: green
+Russia: yellow
+Ukraine: green
+Croatia: red
+Romania: yellow
+Serbia: green
+Latvia: red
+Estonia: blue
+Finland: blue
+Georgia: blue
+Norway: red
+Moldova: blue
+Bosnia: blue
+Montenegro: yellow
+Bulgaria: blue
+Macedonia: yellow
+Sweden: yellow
+Albania: blue
+Kosovo: red
+Greece: red
+--------------------------
+total time: 0.000609607
+number of assignments 8177445
+running for ../testCases/brasilFC.in with 'Forward Check'
+finished successfully!
+answer given by algorithm:
+Acre: blue
+Alagoas: blue
+Amapá: blue
+Amazonas: yellow
+Bahia: yellow
+Ceará: blue
+Distrito Federal: blue
+Goiás: red
+Espírito Santo: blue
+Maranhão: blue
+Mato Grosso: blue
+Mato Grosso do Sul: yellow
+Minas Gerais: green
+Pará: red
+Paraíba: yellow
+Paraná: blue
+Pernambuco: green
+Piauí: red
+Rio de Janeiro: yellow
+Rio Grande do Norte: red
+Rio Grande do Sul: blue
+Rondônia: red
+Roraima: blue
+São Paulo: red
+Santa Catarina: yellow
+Sergipe: red
+Tocantins: green
+--------------------------
+total time: 0.010561735
+number of assignments 8177674
+running for ../testCases/brasil.in with 'Simple Backtrack'
+finished successfully!
+answer given by algorithm:
+Acre: blue
+Alagoas: blue
+Amapá: blue
+Amazonas: yellow
+Bahia: yellow
+Ceará: blue
+Distrito Federal: blue
+Goiás: red
+Espírito Santo: blue
+Maranhão: blue
+Mato Grosso: blue
+Mato Grosso do Sul: yellow
+Minas Gerais: green
+Pará: red
+Paraíba: yellow
+Paraná: blue
+Pernambuco: green
+Piauí: red
+Rio de Janeiro: yellow
+Rio Grande do Norte: red
+Rio Grande do Sul: blue
+Rondônia: red
+Roraima: blue
+São Paulo: red
+Santa Catarina: yellow
+Sergipe: red
+Tocantins: green
+--------------------------
+total time: 1.732733561
+number of assignments 8400269
+running for ../testCases/brasilMVR.in with 'Forward Check + MVR'
+finished successfully!
+answer given by algorithm:
+Acre: blue
+Alagoas: red
+Amapá: blue
+Amazonas: yellow
+Bahia: blue
+Ceará: blue
+Distrito Federal: blue
+Goiás: red
+Espírito Santo: yellow
+Maranhão: blue
+Mato Grosso: blue
+Mato Grosso do Sul: yellow
+Minas Gerais: green
+Pará: red
+Paraíba: red
+Paraná: blue
+Pernambuco: yellow
+Piauí: red
+Rio de Janeiro: blue
+Rio Grande do Norte: yellow
+Rio Grande do Sul: blue
+Rondônia: red
+Roraima: blue
+São Paulo: red
+Santa Catarina: yellow
+Sergipe: yellow
+Tocantins: yellow
+--------------------------
+total time: 0.001209205
+number of assignments 8400296
+running for ../testCases/usaGRAU.in with 'Forward Check + MVR + Grau'
+finished successfully!
+answer given by algorithm:
+AK: blue
+AL: yellow
+AR: yellow
+AZ: green
+CA: blue
+CO: blue
+CT: yellow
+DC: red
+DE: red
+FL: red
+GA: blue
+HI: yellow
+IA: yellow
+ID: blue
+IL: red
+IN: blue
+KS: yellow
+KY: yellow
+LA: red
+MA: blue
+MD: yellow
+ME: blue
+MI: yellow
+MN: red
+MO: blue
+MS: blue
+MT: red
+NC: yellow
+ND: yellow
+NE: red
+NH: red
+NJ: yellow
+NM: yellow
+NV: yellow
+NY: red
+OH: green
+OK: red
+OR: red
+PA: blue
+RI: red
+SC: red
+SD: blue
+TN: red
+TX: blue
+UT: red
+VA: blue
+VT: yellow
+WA: yellow
+WI: blue
+WV: red
+WY: yellow
+--------------------------
+total time: 0.003748199
+number of assignments 8400347
+running for ../testCases/brasilGRAU.in with 'Forward Check + MVR + Grau'
+finished successfully!
+answer given by algorithm:
+Acre: blue
+Alagoas: red
+Amapá: blue
+Amazonas: yellow
+Bahia: blue
+Ceará: blue
+Distrito Federal: blue
+Goiás: red
+Espírito Santo: red
+Maranhão: blue
+Mato Grosso: blue
+Mato Grosso do Sul: green
+Minas Gerais: yellow
+Pará: red
+Paraíba: red
+Paraná: yellow
+Pernambuco: yellow
+Piauí: red
+Rio de Janeiro: green
+Rio Grande do Norte: yellow
+Rio Grande do Sul: yellow
+Rondônia: red
+Roraima: blue
+São Paulo: blue
+Santa Catarina: blue
+Sergipe: yellow
+Tocantins: yellow
+--------------------------
+total time: 0.001384509
+number of assignments 8400374
+running for ../testCases/usaFC.in with 'Forward Check'
+finished successfully!
+answer given by algorithm:
+AK: blue
+AL: blue
+AR: blue
+AZ: blue
+CA: yellow
+CO: yellow
+CT: blue
+DC: blue
+DE: blue
+FL: yellow
+GA: red
+HI: blue
+IA: blue
+ID: blue
+IL: yellow
+IN: blue
+KS: blue
+KY: red
+LA: red
+MA: yellow
+MD: yellow
+ME: blue
+MI: yellow
+MN: red
+MO: green
+MS: green
+MT: red
+NC: blue
+ND: blue
+NE: red
+NH: red
+NJ: yellow
+NM: green
+NV: green
+NY: green
+OH: green
+OK: red
+OR: red
+PA: red
+RI: red
+SC: yellow
+SD: yellow
+TN: yellow
+TX: yellow
+UT: red
+VA: green
+VT: blue
+WA: yellow
+WI: green
+WV: blue
+WY: green
+--------------------------
+total time: 7.141304923
+number of assignments 8578759
+running for ../testCases/EuropeGRAU.in with 'Forward Check + MVR + Grau'
+finished successfully!
+answer given by algorithm:
+Portugal: blue
+Spain: yellow
+Andorra: red
+France: blue
+Belgium: red
+Germany: yellow
+Italy: yellow
+Luxembourg: green
+Monaco: yellow
+Switzerland: red
+Netherlands: blue
+Austria: blue
+Czech Republic: red
+Denmark: blue
+Poland: blue
+San Marino: blue
+Slovenia: green
+Liechtenstein: yellow
+Hungary: red
+Slovakia: yellow
+Belarus: red
+Lithuania: green
+Russia: yellow
+Ukraine: green
+Croatia: blue
+Romania: blue
+Serbia: yellow
+Latvia: blue
+Estonia: red
+Finland: blue
+Georgia: blue
+Norway: red
+Moldova: yellow
+Bosnia: green
+Montenegro: red
+Bulgaria: red
+Macedonia: blue
+Sweden: yellow
+Albania: yellow
+Kosovo: green
+Greece: green
+--------------------------
+total time: 0.002388499
+number of assignments 8578800
