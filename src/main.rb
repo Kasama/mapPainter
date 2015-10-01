@@ -4,11 +4,13 @@ require './node'
 require './color'
 require './graph'
 require './graph_fc'
+require './graph_mvr'
+require './graph_grau'
 require './node_fc'
 require './new_hash'
 
-map = MapReader.read_map '../testCases/brasil.in'
-graph = Graph.new map[:graph]
+map = MapReader.read_map '../testCases/Europe.in'
+graph = GraphGrau.new map[:graph]
 opreation = map[:operation]
 =begin
   a = Simples

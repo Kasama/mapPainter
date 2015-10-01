@@ -1,5 +1,7 @@
 class Graph
 
+  attr_reader :nodes
+
   def initialize(adj_list)
     @nodes = Hash.new
     adj_list.each_key do |k|
@@ -10,6 +12,10 @@ class Graph
         @nodes[k].add_neighbor @nodes[neighbor.to_sym]
       end
     end
+  end
+
+  def all_colored
+    @nodes.values.reduce(true) { |memo, n| memo && n.color.present? }
   end
 
   def create_node(name)

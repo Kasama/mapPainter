@@ -24,7 +24,7 @@ class Backtracking
 
 		puts "entered backtrack!\n node = '#{node.to_s}' class = '#{node.class}'"
 		puts "last color = #{@graph.last.color.to_s}"
-		if @graph.last.color.present?
+		if @graph.all_colored
 			puts 'finished successfully!'
 			return true
 		end
